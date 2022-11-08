@@ -1,0 +1,8 @@
+.place {
+  display: grid;
+  grid-template-columns: minmax(auto, 460px) minmax(auto, 484px);
+  grid-gap: 3em 2.5em;
+}
+.place:not(:last-child) {
+  margin-bottom: 5rem;
+}
