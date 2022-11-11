@@ -8,3 +8,15 @@
   grid-column: 1/2;
   grid-row: 1/2;
 }
+
+@media screen and (max-width: 769px) {
+  .place__title {
+    font-size: 42px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .place__title {
+    font-size: 32px;
+    padding: 0 1rem;
+  }
+}

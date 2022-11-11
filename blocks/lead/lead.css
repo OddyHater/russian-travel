@@ -1,5 +1,21 @@
 .lead {
   max-width: 984px;
-  margin: 0 auto;
   padding-top: 3.5rem;
+  margin: 0 auto;
 }
+
+@media screen and (max-width: 1025px) {
+  .lead {
+    max-width: 928px;
+    padding-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .lead {
+    padding: 0;
+    padding-top: 3rem;
+    max-width: 100%;
+  }
+}
+

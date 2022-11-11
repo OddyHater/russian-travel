@@ -1,8 +1,38 @@
 .place {
   display: grid;
   grid-template-columns: minmax(auto, 460px) minmax(auto, 484px);
-  grid-gap: 3em 2.5em;
+  grid-gap: 3rem 2.5rem;
 }
 .place:not(:last-child) {
   margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 1025px) {
+  .place {
+    grid-template-columns: minmax(auto, 440px) minmax(auto, 456px);
+    grid-gap: 3rem 2rem;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .place {
+    grid-template-columns: minmax(auto, 340px) minmax(auto, 352px);
+    grid-gap: 3rem 1.75rem;
+  }
+  .place:not(:last-child) {
+    margin-bottom: 4.5rem;
+  }
+}
+
+@media screen and (max-width: 662px) {
+  .place {
+    grid-template-columns: minmax(auto, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .place:not(:last-child) {
+    margin-bottom: 3.125rem;
+  }
 }

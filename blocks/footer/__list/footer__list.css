@@ -1,4 +1,12 @@
 .footer__list {
   display: flex;
-  gap: 1.125rem;
+  gap: 1.17rem;
+}
+
+@media screen and (max-width: 662px) {
+  .footer__list {
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
 }

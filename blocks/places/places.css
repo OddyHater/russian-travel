@@ -1,6 +1,29 @@
 .places {
-  max-width: 984px;
+  max-width: 1080px;
+  box-sizing: border-box;
   margin: 0 auto;
-  padding-top: 5.625rem;
+  padding: 5.625rem 3rem 0 3rem;
   margin-bottom: 5.75rem;
+}
+
+@media screen and (max-width: 1025px) {
+  .places {
+    max-width: 1024px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .places {
+    max-width: 100%;
+    padding: 5.625rem 1.5rem 0 1.5rem;
+    margin-bottom: 5.625rem;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .places {
+    padding: 0;
+    padding-top: 4rem;
+    margin-bottom: 4.125rem;
+  }
 }

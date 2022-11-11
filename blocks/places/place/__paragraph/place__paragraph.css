@@ -4,9 +4,25 @@
   font-size: 18px;
   line-height: 1.63;
   color: #FFFFFF;
-  letter-spacing: .6px;
 }
 
 .place__paragraph:not(:last-of-type) {
   margin-bottom: 1.625rem;
+}
+
+@media screen and (max-width: 769px) {
+  .place__paragraph {
+    font-size: 16px;
+  }
+  .place__paragraph:not(:last-of-type) {
+    margin-bottom: 1.5625rem;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .place__paragraph {
+    box-sizing: border-box;
+    grid-row: 4/5;
+    padding: 0 1rem;
+  }
 }

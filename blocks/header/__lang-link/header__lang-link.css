@@ -7,3 +7,9 @@
 .header__lang-link:not(:last-of-type) {
   margin-right: 13px;
 }
+
+@media screen and (max-width: 662px) {
+  .header__lang-link {
+    font-size: 18px;
+  }
+}
