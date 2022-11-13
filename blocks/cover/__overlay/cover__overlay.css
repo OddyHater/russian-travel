@@ -1,21 +1,21 @@
-.cover {
+.cover__overlay {
   display: flex;
   box-sizing: border-box;
   position: relative;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: url(../../images/cover.jpg);
+  background-image: url(../../../images/cover.jpg);
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   max-width: 1184px;
   min-height: 740px;
   margin: 0 auto;
+  background-repeat: no-repeat;
   text-decoration: none;
 }
 
-.cover::before {
+.cover__overlay::before {
   content: '';
   position: absolute;
   top: 0;
@@ -27,27 +27,25 @@
   transition: opacity .2s linear;
 }
 
-.cover:hover::before {
+.cover__overlay:hover::before {
   opacity: .8;
 }
 
 @media screen and (max-width: 1025px) {
-  .cover {
+  .cover__overlay {
     max-width: 100%;
     min-height: 640px;
   }
 }
 
 @media screen and (max-width: 769px) {
-  .cover {
-    max-width: 100%;
+  .cover__overlay {
     min-height: 480px;
   }
 }
 
 @media screen and (max-width: 662px) {
-  .cover {
-    max-width: 100%;
+  .cover__overlay {
     min-height: 200px;
   }
 }
